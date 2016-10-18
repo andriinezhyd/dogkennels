@@ -1,0 +1,51 @@
+.wrapper {
+        max-width: 775px;
+        background: url(../img/bg_img.png)no-repeat 45px -216px;
+    }
+
+                            /*header*/
+nav{
+    margin-left: 75px;
+    position: relative;
+    z-index: 1;
+}
+#logo{
+    margin: 50px 0 65px 67px;
+    z-index: 1;
+}
+/*end header*/
+
+                             /*main*/
+.side-left,
+.side-right{
+    width:300px;
+    float: left;
+}
+.block{
+    width:280px;
+}
+.green-box .side-right{
+    margin-left:-23px;
+}
+.blue-box{
+    height: 371px;
+}
+.blue-box .side-left{
+    margin-left:28px;
+}
+.blue-box .side-right{
+    margin-left:7px;
+}
+.blue-box .side-right h1{
+    padding-top:57px;
+}
+.bigDog-bg{
+    display: block;
+    width:404px;
+    height:600px;
+    position: absolute;
+    top: -274px;
+    left: 224px;
+    background:url(../img/dog_big.png) no-repeat;
+}
+/*end main*/

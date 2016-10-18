@@ -1,0 +1,345 @@
+@font-face {
+  font-family: 'MyriadPro-BoldCond';
+  src: url('../fonts/MyriadPro-BoldCond.eot');
+  src: url('../fonts/MyriadPro-BoldCond.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/MyriadPro-BoldCond.woff2') format('woff2'),
+       url('../fonts/MyriadPro-BoldCond.woff') format('woff'),
+       url('../fonts/MyriadPro-BoldCond.ttf') format('truetype'),
+       url('../fonts/MyriadPro-BoldCond.svg#MyriadPro-BoldCond') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'Daniel Black';
+	src: url('../fonts/daniel-black.eot');
+	src: url('../fonts/daniel-black.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/daniel-black.woff2') format('woff2'),
+			url('../fonts/daniel-black.woff') format('woff'),
+			url('../fonts/daniel-black.ttf') format('truetype'),
+			url('../fonts/daniel-black.svg#daniel_blackregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'Standard0755';
+	src: url('../fonts/stan0755.eot');
+	src: url('../fonts/stan0755.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/stan0755.woff2') format('woff2'),
+	url('../fonts/stan0755.woff') format('woff'),
+	url('../fonts/stan0755.ttf') format('truetype'),
+	url('../fonts/stan0755.svg#standard_07_55regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	font-family: 'Standard0765';
+	src: url('../fonts/stan0765.eot');
+	src: url('../fonts/stan0765.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/stan0765.woff2') format('woff2'),
+	url('../fonts/stan0765.woff') format('woff'),
+	url('../fonts/stan0765.ttf') format('truetype'),
+	url('../fonts/stan0765.svg#standard_07_65regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+  font-family: 'MyriadPro-Semibold';
+  src: url('../fonts/MyriadPro-Semibold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+.clearfix:after {
+	content:".";
+	clear:both;
+	display:block;
+	height:0;
+	font-size:0;
+	visibility:hidden
+}
+.wrapper {
+	margin:0 auto;
+	background:#fff;
+	width: 100vw;
+	height: 100%;
+	color:#000;
+	font:7px 'ag_helveticaregular', Arial, Helvetica, sans-serif;
+}
+
+								/*header*/
+.lineTop{
+	width: 100%;
+	height: 36px;
+	background-color: rgb(241, 241, 241);
+}
+.lineMiddle {
+	width: 100%;
+	height: 35px;
+	background-color: rgba(225, 225, 225, 0.25);
+}
+.lineBottom{
+	width: 100%;
+	height: 10px;
+	margin-top: 2px;
+	background-color: rgb(241, 241, 241);
+}
+
+/*navigation*/
+nav {
+	width:300px;
+	height: 47px;
+	margin: -47px auto 0;
+}
+.menu{list-style: none;}
+.menu>li{
+	float: left;
+	width: 52px;
+	margin-right:10px;
+	border-bottom: 10px solid;
+}
+.menu a{
+	display: block;
+	font: 14px/24px 'MyriadPro-BoldCond';
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 9px 0 4px;
+}
+.menu a:active,
+.menu a:hover{
+	color: #fff;
+}
+.menu>li:nth-child(1) {
+	border-bottom-color:#14aef4;
+}
+.menu>li:nth-child(2) {
+	border-bottom-color:#febf24;
+}
+.menu>li:nth-child(3) {
+	border-bottom-color:#89c734;
+}
+.menu>li:nth-child(4) {
+	border-bottom-color:#ef141c;
+}
+.menu>li:nth-child(5) {
+	border-bottom-color:#832878;
+	margin-right:0;
+}
+
+/*logotype*/
+#logo{
+	display: block;
+	width:337px;
+	height:90px;
+	margin: 30px auto;
+	background: url(../img/logo.png) no-repeat;
+	position: relative;
+}
+
+#logo_text{				/*Dog*/
+	font: 53px 'Daniel Black';
+	color: #54b1d2;
+	letter-spacing:-0.045em;
+	position: absolute;
+	top: 18px;
+	left: 45px;
+}
+#logo_text1{			/*Kennels*/
+	font: 53px 'Daniel Black';
+	color: #b1de37;
+	letter-spacing:-0.042em;
+	position: absolute;
+	top: 18px;
+	left: 142px;
+}
+#logo_text2{			/*PROFESSIONAL DOG BREEDING*/
+	font: 14px 'MyriadPro-BoldCond';
+	color: #959595;
+	letter-spacing:-0.005em;
+	text-transform: uppercase;
+	position: absolute;
+	left: 192px;
+	top:62px;
+}
+/*end header*/
+									/* main */
+
+.main{
+	width:80.64516129032258%;
+	margin: 0 auto;
+	position: relative;
+}
+.bigDog-bg{
+	display: none;
+}
+
+								/*green-box style*/
+.green-box{
+	margin: 0 auto;
+	height: 100%;
+	border-radius: 50px;
+	background-color: rgba(168, 218, 33, 0.9);
+	position: relative;
+	z-index: 3;
+	overflow: hidden;
+}
+.side-left,
+.side-right{
+	margin: 0 auto;
+	width: 321px;
+	height: 151px;
+}
+.green-pic{
+	width: 137px;
+	height: 151px;
+	float: left;
+}
+.side-right .green-pic{
+	margin-right:-3px;
+	padding-top: 15px;
+}
+.green-box h1{
+	font: 24px/24px 'Daniel Black';
+	color: #fff;
+	letter-spacing:-0.04em;
+	padding-top: 21px;
+}
+.green-box p{
+	font: 8px/16px 'Standard0755';
+}
+.green-box h3{
+	font: 8px/16px 'Standard0765';
+	margin-top: 2px;
+}
+.main a{
+	display:block;
+	padding-top: 16px;
+	font: 14px/18px 'MyriadPro-BoldCond';
+	color: #fff;
+	text-decoration: none;
+
+}
+a img {
+	float: left;
+	border: none;
+	padding-right: 5px;
+	margin: -1px 1px 0 2px;
+}
+.text1,
+.text2{
+	width: 161px;
+	height: 151px;
+	box-sizing: border-box;
+	float: left;
+}
+/*end green-box style*/
+								/*shadow-box style*/
+.shadow-box {
+	height: 161px;
+	border-radius: 50px;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: relative;
+	z-index: 2;
+	margin: -151px auto 0;
+}
+/*end shadow-box style*/
+								/*blue-box style*/
+.blue-box{
+	height:100%;
+	background-color: rgba(65,169,205,0.9);
+	border-radius: 50px;
+	position: relative;
+	margin: -40px auto 0;
+	z-index: 1;
+}
+.block {
+	height: 100%;
+	width:270px;
+	height: 100%;
+	margin:0 auto;
+	padding-left:10px;
+}
+.blue-box .side-left h1{
+	padding-top:57px;
+}
+.block h1{
+	font: normal 24px/24px 'MyriadPro-Semibold';
+	color: #fff;
+}
+.block h2{
+	font: normal 10px/10px 'MyriadPro-Semibold';
+	margin-bottom: 21px;
+}
+.block h3{
+	font: normal 8px/16px 'Standard0765';
+	color: #000;
+}
+.block span,
+.blue-box li>a{
+	font: 8px/16px 'Standard0755';
+	color: #fff;
+	padding: 0;
+}
+section{
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	width: 284px;
+	height: 80px;
+	margin-top: 11px;
+}
+.articleLeft{
+	width: 194px;
+	padding: 5px 25px 0 11px;
+}
+.articleRight{
+	width: 230px;
+	margin: 11px 0 2px 9px;
+}
+.link {
+	margin-left: 156px;
+	padding: 17px 0;
+}
+.articleRight>h3{
+	padding-bottom: 11px;
+}
+.blue-box ul{
+	display: block;
+	width:250px;
+	height:54px;
+	list-style: none;
+	margin: 14px 0 26px 5px;
+}
+.blue-box li{
+	padding-left:15px;
+    background:url(../img/arrow.png) no-repeat left center;
+}
+/*end style blue-box*/
+
+								/*footer style*/
+footer{
+	height: 70px;
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+footer p {
+	font: normal 8px/16px 'Standard0755', Arial, Helvetica, sans-serif;
+	color: #90948d;
+	padding: 18px 0;
+	text-align: center;
+}
+#footerDraw{
+	height: 18px;
+	background-color: rgba(221, 221, 221, 0.25);
+}
+/*end footer style*/
